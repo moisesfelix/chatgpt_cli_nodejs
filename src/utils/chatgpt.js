@@ -7,7 +7,7 @@ async function chatgpt(message) {
 
         const inicio = performance.now(); // Registrar o tempo de início
         const axios = require("axios");
-        const apiKey = "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";
+        const apiKey = process.env.API_KEY;
         const endPoint = "https://api.openai.com/v1/chat/completions";
         const requestBody = {
             model: "gpt-3.5-turbo",
